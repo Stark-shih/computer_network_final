@@ -10,7 +10,7 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlhYjliNzRlM2QxM
 				dataType: "json",
 				async: false,
 				success: function(response) {
-					console.log(response);
+					// console.log(response);
 					data_array = response;
 					document.getElementById("barometer").innerHTML = response[0]['barometer'] + " hPA";
 					document.getElementById("humidity").innerHTML = response[0]['humidity']  + " %";
