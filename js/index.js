@@ -1,14 +1,14 @@
-var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlhYjliNzRlM2QxMjM1OGY5MjJmOTZiNDc3ZDIzOWFkMzhkYmJkZDc5OGM5YmIyYmJkYzQ2ZDFmNWUxMTMzMDU3ZTNkZDgyOTA3NjhiMzg5In0.eyJhdWQiOiIyIiwianRpIjoiOWFiOWI3NGUzZDEyMzU4ZjkyMmY5NmI0NzdkMjM5YWQzOGRiYmRkNzk4YzliYjJiYmRjNDZkMWY1ZTExMzMwNTdlM2RkODI5MDc2OGIzODkiLCJpYXQiOjE1NzM0NzE4NjgsIm5iZiI6MTU3MzQ3MTg2OCwiZXhwIjoxNjA1MDk0MjY4LCJzdWIiOiIyNyIsInNjb3BlcyI6W119.ooM1lHo5DBq-F0TbEP4zWQSjcpExXoS_mrG3OeBXajTG-VCWrr7l5fuaTamHF8-FccHY6mE_ckK94mk-eEaevPIdxDqul8kcF9S0fyVhHBYAr17gMkbZIqYDrcW4-G_qTvwnpAslKfqLZ7LRPLstwN8mEhHlnEnM1rDzo64Kj4ZhnvRq6L9ZEtpysNdzTpIsXyNaMcQwNk4Z13VlF-NzcEt7jBbDj8McELrw9KLnldrjZjs0cxv_drKLibIspO89goqARBVGNRR5YD4S4j9jyvup10aa2PPsBjPqb_ojEWkfR7eV5VzfDQLwt-uWQ9EFNj8CWc3PH-UrdLUddsCUFxbBFewHYfiB-xOyU7ek765rWxKpfK8I2DQGcr0uq3U8yobOIX3Uoia9yTJycc48xH0T9Rfc661enTwNQLfMUCQznTAI1HD69-gCl0DCVwB3LbpanGkpJc0aJzWPq-YftqfnVYITH5Jg00Ut1BiDW8gO_mIGH2v7voRPfHVP4oLOTXklJl1_WnqfcI6_gm3l1IpNSPRkP4BwSuSLeyLMkkOscEMmrqODt7iXOBfcNzzpPzoyJRS931sO03jTf_ilM6rahBWrR4oku6QjKVaHXqgpRI6ebeBoNJi2YJrysWyOg0HyxB463HcK4CUiI8KrM8xI-c0XG9e9bX0DAehEdHA";
+var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4ZjJmOWViOTcwNzQxNTAwNjcwZWQ3MjcyNjUwOThhYzhkYmYxMWE5N2RhZWRkNmRkMTQ3MDdhOTk3MGFmOGU0OTNlNWRiIn0.eyJhdWQiOiIyIiwianRpIjoiOGViMDI5Y2NlNDhmMmY5ZWI5NzA3NDE1MDA2NzBlZDcyNzI2NTA5OGFjOGRiZjExYTk3ZGFlZGQ2ZGQxNDcwN2E5OTcwYWY4ZTQ5M2U1ZGIiLCJpYXQiOjE1NzcwMzYzMTMsIm5iZiI6MTU3NzAzNjMxMywiZXhwIjoxNjA4NjU4NzEzLCJzdWIiOiIyNjciLCJzY29wZXMiOltdfQ.jw5fs0FM5X0HW4r0Ox14jHU8JDFIK112KsTrgprg5-fgCOOVhKlnBRcAlndi7X20s154jaBghFYJgsfv4hsFMlOxabNYWnWVkEueG0tM-YDr6C3eFADvXoFn1gwo3v6ZYe29FBM5mSOiWebAgS3IF5R6Owl7otgU12Km5s6j6x2eDKvJr9XxZfCT9E9ap36e_bOOf-qyxYfatZvdbM5NKGIWS7GX8TDG9-Fqgo5GPGhhHegRyqIM8mS1tTQ8NvN4Jdxx5tZtHBydJjcb69BNSKUiv1RZbp0aFfcyR4hAM620QgIcRXLCKFg-iWvHS1YaeFyOyslME9S4oR7ecjDmUnzEgEnpu7TGrHQeA5GA9BUEVA3a2X69LzD-qXIX-nEVGNwzygUUHmtFBJFuwYeUNKgViWUH2fB4_TI8GMjgHe-gYuhagZisAL1xafGn17cNHmu4tXeaZsXM-bWGIUel9ioIwK7GHzOMTPrEdGhu0011xjzkmBdjMHOmf1hTweQGbue3EhgGe3HaUhw-1tA2ag-KVdRBVUyMEu2jh5zurwIHzqt3fRStOXFgfp1gZajEdL-10xtWhvrglniJY_MD70000dyoicO4KJ2e_VhgPQiW8z1Ydfu1l_CuuKOrqvpTGH2aOmm7Xo4D4zYT7O8gEdhkp4wPfSu0xuRxRPdcFxI";
 	$(document).ready(function() {
 		$("#test_button").click(function() {
 			var macaddr = "?macaddr=" + "aa52b964";
-			var date_filter = "&date_filter=" + "2019-11-11 11:00:00+-+2019-11-11 12:00:00";
+			var date_filter = "&date_filter=" + "2019-12-15 11:00:00+-+2019-12-22 12:00:00";
 			var data_array;
 			$.ajax({
 				type: "POST",
 				url: "https://campus.kits.tw/ICN_API" + macaddr + date_filter,
 				dataType: "json",
-				async: false,
+				async: false, 
 				success: function(response) {
 					// console.log(response);
 					data_array = response;
