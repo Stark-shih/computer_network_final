@@ -6,13 +6,14 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 			var data_array;
 			$.ajax({
 				type: "POST",
-				url: "https://campus.kits.tw/ICN_API" + macaddr, //+ date_filter,
+				url: "https://campus.kits.tw/ICN_API" + macaddr + date_filter,
 				dataType: "json",
 				async: false, 
 				success: function(response) {
-					// console.log(response);
-					data_array = response;
-					document.getElementById("barometer").innerHTML = response[0]['barometer'] + " hPA";
+					console.log(response);
+                    data_array = response;
+                    console.log(data_array.length)
+                    document.getElementById("barometer").innerHTML = response[0]['barometer'] + " hPA";
 					document.getElementById("humidity").innerHTML = response[0]['humidity']  + " %";
 					document.getElementById("temperature").innerHTML = response[0]['temperature'] + " Celsius degree";
 				},
