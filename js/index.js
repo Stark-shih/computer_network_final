@@ -20,24 +20,23 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 					'Accept': 'application/json',
 					'Authorization': 'Bearer ' + AccessToken
 				},
-				error: function(jqXHR) {
-					//alert("Return status: " + jqXHR.status);
-					if(jqXHR.status == '200')
-						alert("API calling error: macaddr or url format error!");
-					else
-						alert("API is sleeping !");
-				}
+				// error: function(jqXHR) {
+				// 	//alert("Return status: " + jqXHR.status);
+				// 	if(jqXHR.status == '200')
+				// 		alert("API calling error: macaddr or url format error!");
+				// 	else
+				// 		alert("API is sleeping !");
+				// }
 			})
 
 	});
 //histogram
 var x1 = [];
 var x2 = [];
-for (var i = 1; i < 5; i++)
+for (var i = 1; i <500; i++)
 {
-	k = Math.random();
-	x1.push(Math.random() + 1);
-	x2.push(Math.random() + 1.1);
+	x1.push(Math.floor(Math.random()*24));
+	x2.push(Math.floor(Math.random()*24));
 }
 var trace1 = {
   x: x1,
@@ -62,6 +61,15 @@ var data = [trace1, trace2];
 var layout = {
 	barmode: "group",
 	title: '2019/12/24 statistics',
-  	font: {size: 18}
+	font: {size: 18},
+	xaxis: {
+		title: "Time",
+		tickmode: 'linear',
+        tick0: 0,
+        dtick: 2
+	},
+	yaxis: {
+		title: "Frequency"
+	}  
 };
 Plotly.newPlot('myDiv', data, layout);
