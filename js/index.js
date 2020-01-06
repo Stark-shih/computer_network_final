@@ -14,7 +14,6 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 				async: false, 
 				success: function(response) {
                     data_array1 = response;
-					console.log(data_array1.length);
 					for(i = 0; i < data_array1.length; i++){
 						if(data_array1[i]['acc_z']!= null){
 							if(data_array1[i]['created_at'][11]+data_array1[i]['created_at'][12]==count1){
@@ -25,10 +24,6 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 							}
 						}
 					}
-					console.log(x1.length)
-                    // document.getElementById("barometer").innerHTML = response[0]['barometer'] + " hPA";
-					// document.getElementById("humidity").innerHTML = response[0]['humidity']  + " %";
-					// document.getElementById("temperature").innerHTML = response[0]['temperature'] + " Celsius degree";
 				},
 				headers: {
 					'Accept': 'application/json',
@@ -52,7 +47,6 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 				async: false, 
 				success: function(response) {
                     data_array2 = response;
-					console.log(data_array2.length);
 					for(i = 0; i < data_array2.length; i++){
 						if(data_array2[i]['acc_z']!= null){
 							if(data_array2[i]['created_at'][11]+data_array2[i]['created_at'][12]==count2){
@@ -63,10 +57,6 @@ var AccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlYjAyOWNjZTQ4Z
 							}
 						}
 					}
-					console.log(x2.length)
-                    // document.getElementById("barometer").innerHTML = response[0]['barometer'] + " hPA";
-					// document.getElementById("humidity").innerHTML = response[0]['humidity']  + " %";
-					// document.getElementById("temperature").innerHTML = response[0]['temperature'] + " Celsius degree";
 				},
 				headers: {
 					'Accept': 'application/json',
