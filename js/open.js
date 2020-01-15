@@ -50,5 +50,5 @@ $(document).ready(function () {
                     alert("API is sleeping !");
             }
         })
-    }, 2000);
+    }, 5000);
 });
