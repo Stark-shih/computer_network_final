@@ -24,7 +24,6 @@ $(document).ready(function () {
             after = "0"+after;
         }
         var date_filter = "&date_filter="+now.getFullYear()+"-"+month+"-"+now.getDate()+" "+now.getHours()+":"+min_b+":"+before+"+-+"+now.getFullYear()+"-"+month+"-"+now.getDate()+" "+now.getHours()+":"+min_a+":"+after;
-        console.log(date_filter)
         var data_array;
         $.ajax({
             type: "POST",
