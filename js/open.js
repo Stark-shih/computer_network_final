@@ -32,7 +32,7 @@ $(document).ready(function () {
             async: false,
             success: function(response) {
                 data_array = response;
-                if(data_array.length == 0){
+                if(data_array.length != 0){
                     document.getElementById("open").innerHTML = "Open!"
                 }else{
                     document.getElementById("open").innerHTML = "Close!"
@@ -50,5 +50,5 @@ $(document).ready(function () {
                     alert("API is sleeping !");
             }
         })
-    }, 5000);
+    }, 2000);
 });
